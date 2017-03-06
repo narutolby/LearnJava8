@@ -1,3 +1,5 @@
+package chenyi;
+
 import org.junit.jupiter.api.*;
 
 import java.util.List;
@@ -43,7 +45,9 @@ public class StreamFeatureTest {
     @Test
     public void testMapReduce() {
         List<Integer> testList = asList(1, 2, 3, 4);
-        Integer squareSum = testList.stream().map(x -> x * x).reduce(0, (a, b) -> a + b);
+        Integer squareSum = testList.stream()
+                                    .map(x -> x * x)
+                                    .reduce(0, (a, b) -> a + b);
         assertThat(squareSum, equalTo(30));
     }
 }
