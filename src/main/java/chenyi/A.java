@@ -6,4 +6,7 @@ package chenyi;
  * @description
  */
 public class A {
+    public static void mian(){
+
+    }
 }
